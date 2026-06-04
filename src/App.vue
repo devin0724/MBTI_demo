@@ -2,13 +2,16 @@
 import { ref } from 'vue'
 import HomePage from '@/components/HomePage.vue'
 import TestPage from '@/components/TestPage.vue'
+import PayPage from '@/components/PayPage.vue'
 import ResultPage from '@/components/ResultPage.vue'
 import HistoryPage from '@/components/HistoryPage.vue'
+import type { Answer } from '@/types'
 
-type PageType = 'home' | 'test' | 'result' | 'history'
+type PageType = 'home' | 'test' | 'pay' | 'result' | 'history'
 
 const currentPage = ref<PageType>('home')
 const resultId = ref<string>('')
+const currentAnswers = ref<Answer[]>([])
 
 const navigateTo = (page: PageType, id?: string) => {
   currentPage.value = page
@@ -17,9 +20,20 @@ const navigateTo = (page: PageType, id?: string) => {
   }
 }
 
+const handleTestComplete = (answers: Answer[]) => {
+  currentAnswers.value = answers
+  navigateTo('pay')
+}
+
+const handlePayComplete = (id: string) => {
+  navigateTo('result', id)
+}
+
 const handleBack = () => {
   if (currentPage.value === 'test') {
     currentPage.value = 'home'
+  } else if (currentPage.value === 'pay') {
+    currentPage.value = 'test'
   } else if (currentPage.value === 'result') {
     currentPage.value = 'home'
   } else if (currentPage.value === 'history') {
@@ -38,7 +52,13 @@ const handleBack = () => {
     <TestPage 
       v-else-if="currentPage === 'test'"
       @back="handleBack"
-      @complete="(id: string) => navigateTo('result', id)"
+      @complete="handleTestComplete"
+    />
+    <PayPage
+      v-else-if="currentPage === 'pay'"
+      :answers="currentAnswers"
+      @back="handleBack"
+      @complete="handlePayComplete"
     />
     <ResultPage 
       v-else-if="currentPage === 'result'"

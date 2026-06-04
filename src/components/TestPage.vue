@@ -2,12 +2,11 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { questions } from '@/data/questions'
 import { storageService } from '@/services/storage'
-import { calculator } from '@/utils/calculator'
-import type { Answer, Dimension, TestResult } from '@/types'
+import type { Answer, Dimension } from '@/types'
 
 const emit = defineEmits<{
   (e: 'back'): void
-  (e: 'complete', id: string): void
+  (e: 'complete', answers: Answer[]): void
 }>()
 
 const currentIndex = ref(0)
@@ -49,19 +48,7 @@ const goToQuestion = (index: number) => {
 }
 
 const submitTest = () => {
-  const dimensions = calculator.calculateDimensions(answers.value)
-  const type = calculator.determineType(dimensions)
-  const result: TestResult = {
-    id: calculator.generateId(),
-    type,
-    dimensions,
-    answers: answers.value,
-    createdAt: new Date().toISOString()
-  }
-  
-  storageService.saveResult(result)
-  storageService.clearProgress()
-  emit('complete', result.id)
+  emit('complete', answers.value)
 }
 
 const saveProgressAndExit = () => {
@@ -156,7 +143,7 @@ watch(answers, () => {
       <button 
         v-else
         class="btn btn-success"
-        :disabled="answeredCount < questions.length"
+        :disabled="answeredCount === 0"
         @click="submitTest"
       >
         提交测试

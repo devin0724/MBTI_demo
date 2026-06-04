@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect fill="#fff" width="200" height="200"/>
+  <!-- 左上角定位点 -->
+  <rect fill="#000" x="15" y="15" width="45" height="45"/>
+  <rect fill="#fff" x="25" y="25" width="25" height="25"/>
+  <rect fill="#000" x="32" y="32" width="11" height="11"/>
+  <!-- 右上角定位点 -->
+  <rect fill="#000" x="140" y="15" width="45" height="45"/>
+  <rect fill="#fff" x="150" y="25" width="25" height="25"/>
+  <rect fill="#000" x="157" y="32" width="11" height="11"/>
+  <!-- 左下角定位点 -->
+  <rect fill="#000" x="15" y="140" width="45" height="45"/>
+  <rect fill="#fff" x="25" y="150" width="25" height="25"/>
+  <rect fill="#000" x="32" y="157" width="11" height="11"/>
+  <!-- QR码点阵 -->
+  <rect fill="#000" x="65" y="15" width="8" height="8"/>
+  <rect fill="#000" x="81" y="15" width="8" height="8"/>
+  <rect fill="#000" x="97" y="15" width="8" height="8"/>
+  <rect fill="#000" x="113" y="15" width="8" height="8"/>
+  <rect fill="#000" x="73" y="31" width="8" height="8"/>
+  <rect fill="#000" x="89" y="31" width="8" height="8"/>
+  <rect fill="#000" x="105" y="31" width="8" height="8"/>
+  <rect fill="#000" x="65" y="47" width="8" height="8"/>
+  <rect fill="#000" x="81" y="47" width="8" height="8"/>
+  <rect fill="#000" x="97" y="47" width="8" height="8"/>
+  <rect fill="#000" x="129" y="47" width="8" height="8"/>
+  <rect fill="#000" x="15" y="65" width="16" height="8"/>
+  <rect fill="#000" x="39" y="65" width="8" height="8"/>
+  <rect fill="#000" x="55" y="65" width="8" height="8"/>
+  <rect fill="#000" x="71" y="65" width="8" height="8"/>
+  <rect fill="#000" x="87" y="65" width="8" height="8"/>
+  <rect fill="#000" x="103" y="65" width="8" height="8"/>
+  <rect fill="#000" x="119" y="65" width="8" height="8"/>
+  <rect fill="#000" x="135" y="65" width="8" height="8"/>
+  <rect fill="#000" x="151" y="65" width="8" height="8"/>
+  <rect fill="#000" x="15" y="81" width="24" height="8"/>
+  <rect fill="#000" x="47" y="81" width="8" height="8"/>
+  <rect fill="#000" x="63" y="81" width="8" height="8"/>
+  <rect fill="#000" x="95" y="81" width="8" height="8"/>
+  <rect fill="#000" x="111" y="81" width="8" height="8"/>
+  <rect fill="#000" x="127" y="81" width="8" height="8"/>
+  <rect fill="#000" x="143" y="81" width="8" height="8"/>
+  <rect fill="#000" x="47" y="97" width="8" height="8"/>
+  <rect fill="#000" x="63" y="97" width="8" height="8"/>
+  <rect fill="#000" x="79" y="97" width="8" height="8"/>
+  <rect fill="#000" x="95" y="97" width="8" height="8"/>
+  <rect fill="#000" x="127" y="97" width="8" height="8"/>
+  <rect fill="#000" x="143" y="97" width="8" height="8"/>
+  <rect fill="#000" x="159" y="97" width="8" height="8"/>
+  <rect fill="#000" x="63" y="113" width="8" height="8"/>
+  <rect fill="#000" x="79" y="113" width="8" height="8"/>
+  <rect fill="#000" x="103" y="113" width="8" height="8"/>
+  <rect fill="#000" x="119" y="113" width="8" height="8"/>
+  <rect fill="#000" x="135" y="113" width="8" height="8"/>
+  <rect fill="#000" x="151" y="113" width="8" height="8"/>
+  <rect fill="#000" x="71" y="129" width="8" height="8"/>
+  <rect fill="#000" x="87" y="129" width="8" height="8"/>
+  <rect fill="#000" x="103" y="129" width="8" height="8"/>
+  <rect fill="#000" x="119" y="129" width="8" height="8"/>
+  <rect fill="#000" x="143" y="129" width="8" height="8"/>
+  <rect fill="#000" x="79" y="145" width="8" height="8"/>
+  <rect fill="#000" x="95" y="145" width="8" height="8"/>
+  <rect fill="#000" x="111" y="145" width="8" height="8"/>
+  <rect fill="#000" x="127" y="145" width="8" height="8"/>
+  <rect fill="#000" x="143" y="145" width="8" height="8"/>
+  <rect fill="#000" x="159" y="145" width="8" height="8"/>
+  <rect fill="#000" x="71" y="161" width="8" height="8"/>
+  <rect fill="#000" x="87" y="161" width="8" height="8"/>
+  <rect fill="#000" x="103" y="161" width="8" height="8"/>
+  <rect fill="#000" x="119" y="161" width="8" height="8"/>
+  <rect fill="#000" x="143" y="161" width="8" height="8"/>
+  <rect fill="#000" x="79" y="177" width="8" height="8"/>
+  <rect fill="#000" x="95" y="177" width="8" height="8"/>
+  <rect fill="#000" x="111" y="177" width="8" height="8"/>
+  <rect fill="#000" x="127" y="177" width="8" height="8"/>
+  <rect fill="#000" x="143" y="177" width="8" height="8"/>
+  <rect fill="#000" x="159" y="177" width="8" height="8"/>
+</svg>

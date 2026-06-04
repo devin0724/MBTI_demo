@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.4.21"
@@ -13,8 +16,12 @@
   "devDependencies": {
     "@types/node": "^20.11.0",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vitest/coverage-v8": "^4.1.8",
+    "@vue/test-utils": "^2.4.10",
+    "jsdom": "^29.1.1",
     "typescript": "^5.4.5",
     "vite": "^5.4.0",
+    "vitest": "^4.1.8",
     "vue-tsc": "^2.0.6"
   }
 }

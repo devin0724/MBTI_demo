@@ -216,5 +216,77 @@ export const questions: Question[] = [
       { text: '井然有序', value: 'J' },
       { text: '顺其自然', value: 'P' }
     ]
+  },
+  {
+    id: 25,
+    text: '你更倾向于：',
+    dimension: 'E',
+    options: [
+      { text: '与人讨论后再做决定', value: 'E' },
+      { text: '独自思考后再做决定', value: 'I' }
+    ]
+  },
+  {
+    id: 26,
+    text: '你更喜欢的娱乐方式：',
+    dimension: 'I',
+    options: [
+      { text: '在家看书或看电影', value: 'I' },
+      { text: '和朋友外出聚会', value: 'E' }
+    ]
+  },
+  {
+    id: 27,
+    text: '你更相信：',
+    dimension: 'S',
+    options: [
+      { text: '自己的五感体验', value: 'S' },
+      { text: '自己的直觉判断', value: 'N' }
+    ]
+  },
+  {
+    id: 28,
+    text: '你看待未来更倾向于：',
+    dimension: 'N',
+    options: [
+      { text: '设想各种可能性', value: 'N' },
+      { text: '关注现实情况', value: 'S' }
+    ]
+  },
+  {
+    id: 29,
+    text: '你评价他人时更看重：',
+    dimension: 'T',
+    options: [
+      { text: '能力和效率', value: 'T' },
+      { text: '善良和真诚', value: 'F' }
+    ]
+  },
+  {
+    id: 30,
+    text: '团队合作中，你更关注：',
+    dimension: 'F',
+    options: [
+      { text: '团队成员的感受', value: 'F' },
+      { text: '任务的完成质量', value: 'T' }
+    ]
+  },
+  {
+    id: 31,
+    text: '你更喜欢的工作方式：',
+    dimension: 'J',
+    options: [
+      { text: '按计划逐步推进', value: 'J' },
+      { text: '灵活调整随时变化', value: 'P' }
+    ]
+  },
+  {
+    id: 32,
+    text: '你如何应对意外情况：',
+    dimension: 'P',
+    options: [
+      { text: '随机应变，即兴发挥', value: 'P' },
+      { text: '迅速制定新计划', value: 'J' }
+    ]
   }
 ]
